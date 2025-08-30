@@ -1,0 +1,121 @@
+:root {
+  --btn-outlined-color: #000;
+  --btn-contained-color: #fff;
+}
+
+.btn {
+  display: flex;
+  padding: 15px 25px;
+  cursor: pointer;
+  box-shadow: none;
+  align-items: center;
+}
+
+.btn-outlined {
+  border: 2px solid #3f3e3e;
+  color: white;
+  background-color: #080808;
+}
+
+.btn-outlined .Search{
+  color: white;
+}
+
+
+.btn-contained {
+ border:2px solid rgb(192, 189, 189);
+  background-color: #f9f5f5;
+  color: var(--btn-contained-color);
+}
+
+.btn-contained.Search{
+  color: black;
+}
+
+.Search {
+  font-size: 28px;  
+}
+
+.btn-disabled {
+  pointer-events: none;
+  background-color: #ccc;
+  opacity:0.5;
+  border: none;
+  cursor: not-allowed;
+}
+.btn-disable.Search{
+  color: #a3a1a1;
+}
+
+.btn-size-small {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.btn-size-medium {
+  padding: 15px 25px;
+  font-size: 15px;
+}
+
+.btn-size-large {
+  padding: 20px 30px;
+  font-size: 16px;
+}
+
+.btn-rounded-none {
+  border-radius: 0;
+}
+
+.btn-rounded-small {
+  border-radius: 4px;
+}
+
+.btn-rounded-medium {
+  border-radius: 8px;
+}
+
+.btn-rounded-large {
+  border-radius: 12px;
+}
+
+.btn-rounded-full{
+  border-radius: 9999px; 
+}
+
+.btn-with-icon{
+    gap:1.25rem
+
+}
+.btn-icon-right{
+    flex-direction: row-reverse;
+}
+
+.loading-spinner {
+  width: 0.7rem; 
+  height: 0.7rem;
+  border-width: 2px; 
+  border-style: solid; 
+  border-top-color: transparent; 
+  animation: spin 0.8s linear infinite; 
+  border-radius: 9999px; 
+  margin-left:10px;
+}
+
+.loading-spinner.contained {
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+
+
+.loading-spinner.outlined {
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+}
+  
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
